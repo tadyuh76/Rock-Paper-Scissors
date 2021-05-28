@@ -21,7 +21,7 @@ function run(player) {
 
     if (player == computer) {
         result.innerText = 'Hòa';
-        result.style.color = 'efb700';
+        result.style.color = '#efb700';
     }
     else if (player == 'keo' && computer == 'bao' || player == 'bua' && computer == 'keo' || player == 'bao' && computer == 'bua') {
         result.innerText = 'Bạn Thắng';
