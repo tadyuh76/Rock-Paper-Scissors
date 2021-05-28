@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+
+</head>
+
+<body>
+    <div class='container' style='width:75%; margin: 16px auto; text-align: center'>
+        <h1> Kéo Búa Bao </h1>
+        <div class='card'>
+            <div class='choice-box'>
+                <p> Kéo </p>
+                <img src="/img/keo.png" class='keo rounded' onclick='run("keo")'></img>
+                <p> Búa </p>
+                <img src="/img/bua.png" class='bua rounded' onclick='run("bua")'></img>
+                <p> Bao </p>
+                <img src="/img/bao.png" class='bao rounded' onclick='run("bao")'></img>
+            </div>
+            <div class='result-box' style="display: none">
+                <div class='player-choice'>
+                    <p> Bạn chọn: </p>
+                    <img src="" class='player'> </img>
+                </div>
+                <div class='computer-choice'>
+                    <p> Máy chọn: </p>
+                    <img src="" class='computer'> </img>
+                </div>
+                <h3 style='color:steelblue; margin: 32px' class='result'> </h3>
+                <button class='btn btn-success' onclick='playAgain()'> Chơi lại? </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- External JS Link -->
+    <script type="text/javascript" charset="utf-8" src="main.js"></script>
+
+</body>
+
+</html>
